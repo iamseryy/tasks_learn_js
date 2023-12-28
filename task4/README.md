@@ -24,4 +24,4 @@
 
 
 ### Решение
-![](img/task1.png)
+![](img/task.png)
