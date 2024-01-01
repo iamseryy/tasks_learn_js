@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="570f4b6d-42ee-4749-9e69-5a482a28d6c5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task4/img/task1.png" beforeDir="false" afterPath="$PROJECT_DIR$/task4/img/task1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task4/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/task4/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/img/task.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/task2/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task2/img/task1.png" beforeDir="false" afterPath="$PROJECT_DIR$/task2/img/task.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,14 +40,20 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Learning/gb/032_js/seminars/tasks/tasks_learn_js",
+    "last_opened_file_path": "I:/gb/032_основы_js/seminars/tasks/tasks_learn_js",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\gb\032_основы_js\seminars\tasks\tasks_learn_js" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,6 +64,7 @@
       <updated>1703411560743</updated>
       <workItem from="1703411565100" duration="298000" />
       <workItem from="1703769320593" duration="4992000" />
+      <workItem from="1704085324725" duration="9565000" />
     </task>
     <servers />
   </component>
