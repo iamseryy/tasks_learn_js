@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="570f4b6d-42ee-4749-9e69-5a482a28d6c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/task5/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task5/img/task.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task5/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task5/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/task2/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task2/img/task1.png" beforeDir="false" afterPath="$PROJECT_DIR$/task2/img/task.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,21 +27,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "I:/gb/032_основы_js/seminars/tasks/tasks_learn_js",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;I:/gb/032_основы_js/seminars/tasks/tasks_learn_js&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="I:\gb\032_основы_js\seminars\tasks\tasks_learn_js" />
@@ -65,6 +59,10 @@
       <workItem from="1703411565100" duration="298000" />
       <workItem from="1703769320593" duration="4992000" />
       <workItem from="1704085324725" duration="9565000" />
+      <workItem from="1704184169499" duration="628000" />
+      <workItem from="1704184977557" duration="178000" />
+      <workItem from="1704185596654" duration="98000" />
+      <workItem from="1704190472113" duration="556000" />
     </task>
     <servers />
   </component>
