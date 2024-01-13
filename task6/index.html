@@ -43,6 +43,14 @@
         // 6. Получите элемент с классом "card-title" и выведите его родительский узел в консоль.
         const foundElementByClass = document.querySelector('.card-title')
         console.log(foundElementByClass.parentElement)
+
+        //7. Создайте тег p, запишите внутри него текст "Привет" и добавьте созданный тег в начало элемента, который имеет класс "card".
+        const paragraph = document.createElement('p')
+        paragraph.innerText = "Привет"
+        document.querySelector('.card').prepend(paragraph)
+
+        //8. Удалите тег h6 на странице.
+        document.querySelectorAll('h6').forEach(element => element.remove())
     </script>
 </body>
 </html>
