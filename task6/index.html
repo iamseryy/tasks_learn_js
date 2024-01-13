@@ -12,7 +12,7 @@
             <h5 class="card-title" data-number="100">Card title</h5>
             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
             <p class="card-text" data-number="50">
-                Some quick example text to build on the card title and make up the bulk of the card's
+                !!Some quick example text to build on the card title and make up the bulk of the card's
                 content.
             </p>
             <a href="#" id="super_link" class="card-link">Card link</a>
@@ -29,18 +29,20 @@
 
         // 3. Найти все элементы на странице с классом "card-link", которые лежат в элементе с классом "card-body"
         // и вывести полученную коллекцию в консоль.
-
+        const foundElements = document.querySelectorAll('.card-body .card-link')
+        console.log(foundElements)
 
         // 4. Найти первый попавшийся элемент на странице у которого есть атрибут data-number со значением 50
         // и вывести его в консоль.
-
+        const foundElementByValue = document.querySelector('[data-number="50"]')
+        console.log(foundElementByValue)
 
         // 5. Выведите содержимое тега title в консоль.
-
+        console.log(document.querySelector('title').innerText)
 
         // 6. Получите элемент с классом "card-title" и выведите его родительский узел в консоль.
-
-
+        const foundElementByClass = document.querySelector('.card-title')
+        console.log(foundElementByClass.parentElement)
     </script>
 </body>
 </html>
