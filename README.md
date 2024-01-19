@@ -7,3 +7,4 @@
 | 4 | **[Task4](https://github.com/iamseryy/tasks_learn_js/tree/main/task4)** | Циклы и массивы |
 | 5 | **[Task5](https://github.com/iamseryy/tasks_learn_js/tree/main/task5)** | Объекты в JavaScript  |
 | 6 | **[Task6](https://github.com/iamseryy/tasks_learn_js/tree/main/task6)** | Введение в DOM (Document Object Model)  |
+| 7 | **[Task7](https://github.com/iamseryy/tasks_learn_js/tree/main/task7)** | Работа с DOM  |
