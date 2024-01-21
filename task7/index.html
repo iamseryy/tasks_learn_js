@@ -46,6 +46,9 @@
         .forEach(element => element.dataset.add())
 
     // 7. Удалите атрибут type у элемента с классом "dropdown-toggle".
+    document.querySelectorAll('.dropdown-toggle').forEach(element => {
+        element.removeAttribute('type')
+    })
 
 </script>
 </body>
