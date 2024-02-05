@@ -9,3 +9,4 @@
 | 6 | **[Task6](https://github.com/iamseryy/tasks_learn_js/tree/main/task6)** | Введение в DOM (Document Object Model)  |
 | 7 | **[Task7](https://github.com/iamseryy/tasks_learn_js/tree/main/task7)** | Работа с DOM  |
 | 8 | **[Task8](https://github.com/iamseryy/tasks_learn_js/tree/main/task8)** | Основы событий в JavaScript  |
+| 9 | **[Task9](https://github.com/iamseryy/tasks_learn_js/tree/main/task9)** | Работа с событиями  |
