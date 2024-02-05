@@ -2,21 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>task8</title>
+    <title>task9</title>
 </head>
 <body>
     <input id="from" type="text">
     В инпуте написано: <span></span>
-
     <br>
-
     <button class="messageBtn">Показать блок</button>
     <div class="message">
         Привет :)
     </div>
-
     <br>
-
     <form>
         <label>
             Первый инпут:
@@ -39,11 +35,18 @@
     <script>
         // 1. При изменении значения в input с id="from", значение содержащееся в нем должно моментально отображаться
         // в span. То есть при печати в input'е тег span также должен меняться.
+        document.querySelector('#from').addEventListener('input', event => {
+            document.querySelector('span').textContent = event.target.value
+        })
 
         // 2. При клике на кнопку с классом messageBtn необходимо элементу с классом message:
         // - добавить два класса: animate_animated и animate_fadeInLeftBig
         // - поставить данному элементу стиль visibility в значение 'visible'.
-
+        document.querySelector('.messageBtn').addEventListener('click', event => {
+            const messageEl = document.querySelector('.message')
+            messageEl.classList.add('animate_animated', 'animate_fadeInLeftBig')
+            messageEl.style.visibility = 'visible'
+        })
 
         // 3. Необходимо при отправке формы проверить, заполнены ли все поля в этой форме. Если какое-либо поле
         // не заполнено, форма не должна отправляться, также должны быть подсвечены незаполненные поля
@@ -51,6 +54,15 @@
         // какое-либо поле, необходимо, при вводе в данное поле, произвести проверку:
         // - Если поле пустое, необходимо данное поле подсветить (поставить класс error данному полю).
         // - Если поле было чем-либо заполнено, подсветку (класс error) необходимо убрать.
+        document.querySelector('form').addEventListener('input', event => {
+            const formControlEl = document.querySelector('.form-control')
+            event.target.classList.add('error')
+        })
+
+        document.querySelector('form').addEventListener('submit', event => {
+
+        })
+
 
     </script>
 </body>
