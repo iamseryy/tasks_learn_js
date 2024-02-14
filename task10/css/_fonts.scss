@@ -1,0 +1,8 @@
+@mixin fontCard($fs, $lh, $fw, $cl) {
+  font-family: Lato, serif;
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+  letter-spacing: 0.025em;
+  color: $cl;
+}

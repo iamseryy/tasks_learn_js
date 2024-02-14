@@ -1,0 +1,97 @@
+@import "vars";
+@import "fonts";
+@import "positions";
+
+
+%flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%flex_start {
+  display: flex;
+  align-items: flex-start;;
+  justify-content: center;
+}
+
+%column_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.center_full {
+  @include center_content($fullWidth);
+}
+
+.center_base {
+  @include center_content($baseWidth);
+}
+
+.cards {
+  @extend %column_center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 29px;
+  max-width: $baseWidth;
+}
+
+.cards__card {
+  @extend %flex_start;
+  gap: 30px;
+  background-color: #F8F8F8;
+  max-width: 860px;
+  position: relative;
+}
+
+.card__info {
+   padding-top: 20px;
+}
+
+.card__title {
+  @include fontCard(25px, normal, 900, #000);
+  margin-bottom: 30px;
+}
+
+.card__attr {
+  @include fontCard(18px, normal, 800, #5D5D5D);
+  padding-right: 30px;
+  margin-bottom: 5px;
+}
+
+.card__desc {
+  margin-top: 50px;
+  @include fontCard(16px, normal, 300, #5D5D5D);
+  padding-right: 30px;
+}
