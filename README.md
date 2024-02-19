@@ -11,3 +11,4 @@
 | 8 | **[Task8](https://github.com/iamseryy/tasks_learn_js/tree/main/task8)** | Основы событий в JavaScript  |
 | 9 | **[Task9](https://github.com/iamseryy/tasks_learn_js/tree/main/task9)** | Работа с событиями  |
 | 10 | **[Task10](https://github.com/iamseryy/tasks_learn_js/tree/main/task10)** | Работа с JSON  |
+| 11 | **[Task11](https://github.com/iamseryy/tasks_learn_js/tree/main/task11)** | Шаблонизация  |
