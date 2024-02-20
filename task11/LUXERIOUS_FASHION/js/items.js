@@ -47,5 +47,5 @@ items.forEach(item => {
     cartBoxEl.appendChild(cartLinkEl)
     itemEl.appendChild(productLinkEl)
     itemEl.appendChild(cartBoxEl)
-    itemsListEl.append(itemEl)
+    itemsListEl.appendChild(itemEl)
 })
