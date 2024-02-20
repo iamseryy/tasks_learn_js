@@ -4,62 +4,48 @@ const itemsSectionEl = document.querySelector('.main_items_section')
 const itemsListEl = document.createElement('ul')
 
 itemsListEl.classList.add('main_items')
-itemsSectionEl.appendChild(itemsListEl)
+itemsSectionEl.insertBefore(itemsListEl, document.querySelector('.main_button'))
 
 items.forEach(item => {
     const itemEl = document.createElement('li')
     const productLinkEl= document.createElement('a')
     const itemImgEl = document.createElement('img')
-    const itemInfoBox = document.createElement('div')
+    const itemInfoBoxEL = document.createElement('div')
     const itemTitleEl = document.createElement('h3')
     const itemPriceEl = document.createElement('p')
-    
-
-
+    const cartBoxEl = document.createElement('div')
+    const cartLinkEl= document.createElement('a')
+    const cartImgEl = document.createElement('img')
+    const cartCommandNamedEl = document.createElement('p')
 
     itemEl.classList.add('main_items_item')
+    itemImgEl.classList.add('main_items_item_img')
+    itemInfoBoxEL.classList.add('main_items_item_info')
+    itemTitleEl.classList.add('main_items_item_info_title')
+    itemPriceEl.classList.add('main_items_item_info_price')
+    cartBoxEl.classList.add('main_items_item_add')
+    cartLinkEl.classList.add('main_items_item_add_link')
+    cartImgEl.classList.add('main_items_item_add_link_img')
+    cartCommandNamedEl.classList.add('main_items_item_add_link_txt')
 
+    productLinkEl.href = '#'
+    itemImgEl.src = item.image
+    itemImgEl.alt = item.name
     itemTitleEl.textContent = item.name
+    itemPriceEl.textContent = item.price + ' ' + item.currency
+    cartLinkEl.href = '#'
+    cartImgEl.src = 'img/cart-add.svg'
+    cartImgEl.alt = 'cart'
+    cartCommandNamedEl.textContent = 'Add to Cart'
 
-
-    itemEl.appendChild(itemTitleEl)
-    itemsListEl.appendChild(itemEl)
-
-    // const filmEl = document.createElement('li')
-    // const filmImgEl = document.createElement('img')
-    // const filmInfoEl = document.createElement('div')
-    // const filmTitleEl = document.createElement('h2')
-    // const filmGenresEl = document.createElement('p')
-    // const filmYearEl = document.createElement('p')
-    // const filmCountryEl = document.createElement('p')
-    // const filmLength = document.createElement('p')
-    // const filmDescEl = document.createElement('p')
-    //
-    // filmEl.classList.add('cards__card')
-    // filmInfoEl.classList.add('card__info')
-    // filmTitleEl.classList.add('card__title')
-    // filmGenresEl.classList.add('card__attr')
-    // filmYearEl.classList.add('card__attr')
-    // filmCountryEl.classList.add('card__attr')
-    // filmLength.classList.add('card__attr')
-    // filmDescEl.classList.add('card__desc')
-    //
-    // filmImgEl.src = film.posterUrlPreview
-    // filmImgEl.alt = 'poster'
-    // filmTitleEl.textContent = film.name
-    // filmGenresEl.textContent = film.genres.map(it => it.genre).join(', ')
-    // filmYearEl.textContent = film.year
-    // filmCountryEl.textContent = film.countries.map(it => it.country).join(', ')
-    // filmLength.textContent = film.filmLength
-    // filmDescEl.textContent = film.description
-    //
-    // filmEl.appendChild(filmImgEl)
-    // filmInfoEl.appendChild(filmTitleEl)
-    // filmInfoEl.appendChild(filmGenresEl)
-    // filmInfoEl.appendChild(filmYearEl)
-    // filmInfoEl.appendChild(filmCountryEl)
-    // filmInfoEl.appendChild(filmLength)
-    // filmInfoEl.appendChild(filmDescEl)
-    // filmEl.appendChild(filmInfoEl)
-    // filmsListEl.appendChild(filmEl)
+    itemInfoBoxEL.appendChild(itemTitleEl)
+    itemInfoBoxEL.appendChild(itemPriceEl)
+    cartLinkEl.appendChild(cartImgEl)
+    cartLinkEl.appendChild(cartCommandNamedEl)
+    productLinkEl.appendChild(itemImgEl)
+    productLinkEl.appendChild(itemInfoBoxEL)
+    cartBoxEl.appendChild(cartLinkEl)
+    itemEl.appendChild(productLinkEl)
+    itemEl.appendChild(cartBoxEl)
+    itemsListEl.append(itemEl)
 })
