@@ -14,7 +14,8 @@ items.forEach(item => {
     const itemTitleEl = document.createElement('h3')
     const itemPriceEl = document.createElement('p')
     const cartBoxEl = document.createElement('div')
-    const cartLinkEl= document.createElement('a')
+    // const cartLinkEl= document.createElement('a')
+    const cartEl= document.createElement('div')
     const cartImgEl = document.createElement('img')
     const cartCommandNamedEl = document.createElement('p')
 
@@ -24,7 +25,8 @@ items.forEach(item => {
     itemTitleEl.classList.add('main_items_item_info_title')
     itemPriceEl.classList.add('main_items_item_info_price')
     cartBoxEl.classList.add('main_items_item_add')
-    cartLinkEl.classList.add('main_items_item_add_link')
+    // cartLinkEl.classList.add('main_items_item_add_link')
+    cartEl.classList.add('main_items_item_add_link')
     cartImgEl.classList.add('main_items_item_add_link_img')
     cartCommandNamedEl.classList.add('main_items_item_add_link_txt')
 
@@ -33,19 +35,30 @@ items.forEach(item => {
     itemImgEl.alt = item.name
     itemTitleEl.textContent = item.name
     itemPriceEl.textContent = item.price + ' ' + item.currency
-    cartLinkEl.href = '#'
+    // cartLinkEl.href = '#'
     cartImgEl.src = 'img/cart-add.svg'
     cartImgEl.alt = 'cart'
     cartCommandNamedEl.textContent = 'Add to Cart'
 
     itemInfoBoxEL.appendChild(itemTitleEl)
     itemInfoBoxEL.appendChild(itemPriceEl)
-    cartLinkEl.appendChild(cartImgEl)
-    cartLinkEl.appendChild(cartCommandNamedEl)
+    // cartLinkEl.appendChild(cartImgEl)
+    // cartLinkEl.appendChild(cartCommandNamedEl)
+    cartEl.appendChild(cartImgEl)
+    cartEl.appendChild(cartCommandNamedEl)
     productLinkEl.appendChild(itemImgEl)
     productLinkEl.appendChild(itemInfoBoxEL)
-    cartBoxEl.appendChild(cartLinkEl)
+    // cartBoxEl.appendChild(cartLinkEl)
+    cartBoxEl.appendChild(cartEl)
     itemEl.appendChild(productLinkEl)
     itemEl.appendChild(cartBoxEl)
     itemsListEl.appendChild(itemEl)
 })
+
+const cartBoxEl = document.querySelector('.main_items')
+cartBoxEl.addEventListener('click', event => {
+    if (event.target.className === 'main_items_item_add_link' ||
+        event.target.parentElement.className === 'main_items_item_add_link') console.log('test')
+})
+
+
