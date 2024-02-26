@@ -1,7 +1,7 @@
 const data = `
 [
 	{
-		"Id": 1,
+		"id": 1,
 		"name": "t-shirt",
 		"brand": "Mango People",
 		"price": 52,
@@ -9,7 +9,7 @@ const data = `
 		"image": "img/rectangle_5_copy_1193.png"
 	},
 	{
-		"Id": 2,
+		"id": 2,
 		"name": "blouse",
 		"brand": "Versace",
 		"price": 70,
@@ -17,7 +17,7 @@ const data = `
 		"image": "img/rectangle_5_copy_1201.png"
 	},
 	{
-		"Id": 3,
+		"id": 3,
 		"name": "jacket",
 		"brand": "Armani",
 		"price": 85,
@@ -25,7 +25,7 @@ const data = `
 		"image": "img/rectangle_5_copy_3_1209.png"
 	},
 	{
-		"Id": 4,
+		"id": 4,
 		"name": "dress",
 		"brand": "Mango People",
 		"price": 108,
@@ -33,7 +33,7 @@ const data = `
 		"image": "img/rectangle_5_copy_1240.png"
 	},
 	{
-		"Id": 5,
+		"id": 5,
 		"name": "dress",
 		"brand": "Burberry",
 		"price": 200,
@@ -41,7 +41,7 @@ const data = `
 		"image": "img/rectangle_5_copy_1248.png"
 	},
 	{
-		"Id": 6,
+		"id": 6,
 		"name": "suit",
 		"brand": "Prada",
 		"price": 111,
@@ -49,7 +49,7 @@ const data = `
 		"image": "img/rectangle_5_copy_1256.png"
 	},
 	{
-		"Id": 7,
+		"id": 7,
 		"name": "trousers",
 		"brand": "Fashion Forward",
 		"price": 59,
@@ -57,7 +57,7 @@ const data = `
 		"image": "img/rectangle_5_copy_1264.png"
 	},
 	{
-		"Id": 8,
+		"id": 8,
 		"name": "sweatshirt",
 		"brand": "Dreamy Days",
 		"price": 20,

@@ -1,4 +1,5 @@
 const items = JSON.parse(data)
+const items_cart = []
 
 const itemsSectionEl = document.querySelector('.main_items_section')
 const itemsListEl = document.createElement('ul')
@@ -53,12 +54,17 @@ items.forEach(item => {
     itemEl.appendChild(productLinkEl)
     itemEl.appendChild(cartBoxEl)
     itemsListEl.appendChild(itemEl)
+
+    cartBoxEl.addEventListener('click', event => {
+        items_cart.push(item)
+    })
 })
 
-const cartBoxEl = document.querySelector('.main_items')
-cartBoxEl.addEventListener('click', event => {
-    if (event.target.className === 'main_items_item_add_link' ||
-        event.target.parentElement.className === 'main_items_item_add_link') console.log('test')
-})
+// const cartBoxEl = document.querySelector('.main_items')
+// cartBoxEl.addEventListener('click', event => {
+//     console.log(event)
+//     if (event.target.className === 'main_items_item_add_link' ||
+//         event.target.parentElement.className === 'main_items_item_add_link') console.log("test")
+// })
 
 
