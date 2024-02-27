@@ -5,7 +5,9 @@ const data = `
 		"name": "t-shirt",
 		"brand": "Mango People",
 		"price": 52,
-		"currency": "usd",
+		"color": "White",
+		"size": "M",
+		"currency": "$",
 		"image": "img/rectangle_5_copy_1193.png"
 	},
 	{
@@ -13,7 +15,9 @@ const data = `
 		"name": "blouse",
 		"brand": "Versace",
 		"price": 70,
-		"currency": "usd",
+		"color": "Red",
+		"size": "S",
+		"currency": "$",
 		"image": "img/rectangle_5_copy_1201.png"
 	},
 	{
@@ -21,7 +25,9 @@ const data = `
 		"name": "jacket",
 		"brand": "Armani",
 		"price": 85,
-		"currency": "usd",
+		"color": "Blue",
+		"size": "M",
+		"currency": "$",
 		"image": "img/rectangle_5_copy_3_1209.png"
 	},
 	{
@@ -29,7 +35,9 @@ const data = `
 		"name": "dress",
 		"brand": "Mango People",
 		"price": 108,
-		"currency": "usd",
+		"color": "White",
+		"size": "S",
+		"currency": "$",
 		"image": "img/rectangle_5_copy_1240.png"
 	},
 	{
@@ -37,7 +45,9 @@ const data = `
 		"name": "dress",
 		"brand": "Burberry",
 		"price": 200,
-		"currency": "usd",
+		"color": "White",
+		"size": "S",
+		"currency": "$",
 		"image": "img/rectangle_5_copy_1248.png"
 	},
 	{
@@ -45,7 +55,9 @@ const data = `
 		"name": "suit",
 		"brand": "Prada",
 		"price": 111,
-		"currency": "usd",
+		"color": "Grey",
+		"size": "M",
+		"currency": "$",
 		"image": "img/rectangle_5_copy_1256.png"
 	},
 	{
@@ -53,7 +65,9 @@ const data = `
 		"name": "trousers",
 		"brand": "Fashion Forward",
 		"price": 59,
-		"currency": "usd",
+		"color": "White",
+		"size": "M",
+		"currency": "$",
 		"image": "img/rectangle_5_copy_1264.png"
 	},
 	{
@@ -61,7 +75,9 @@ const data = `
 		"name": "sweatshirt",
 		"brand": "Dreamy Days",
 		"price": 20,
-		"currency": "usd",
+		"color": "Blue",
+		"size": "M",
+		"currency": "$",
 		"image": "img/rectangle_5_copy_1272.png"
 	}
 ]
