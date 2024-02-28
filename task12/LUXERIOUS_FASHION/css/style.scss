@@ -845,6 +845,7 @@ z-index: 10;
           margin-left: 8px;
           @include fontTitle(13px, 1.2, 700, $baseBackgroundColor);
         }
+        background-color: rgba(28,28,28,0);
       }
       &_link:hover {
         box-shadow: 0 0 8px #fff;
@@ -970,6 +971,18 @@ z-index: 10;
   justify-content: flex-start;
   margin-bottom: 64px;
   
+}
+
+.cart-box {
+  @extend %column_start;
+  width: 68.4%;
+  padding-left: 1%;
+  &__title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+    @include fontTitle(30px, 44px, 700, $baseContentColor);
+  }
 }
 
 .cart-content {
