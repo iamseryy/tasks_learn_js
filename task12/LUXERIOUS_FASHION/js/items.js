@@ -1,5 +1,5 @@
 function buildFeaturedItems(featuredItems) {
-    const cartItems = []
+    const cartItems = new Map()
     const itemsSectionEl = document.querySelector('.main_items_section')
     const itemsListEl = document.createElement('ul')
 
@@ -14,8 +14,7 @@ function buildFeaturedItems(featuredItems) {
         const itemTitleEl = document.createElement('h3')
         const itemPriceEl = document.createElement('p')
         const cartBoxEl = document.createElement('div')
-        // const cartLinkEl= document.createElement('a')
-        const cartEl= document.createElement('div')
+        const cartEl= document.createElement('button')
         const cartImgEl = document.createElement('img')
         const cartCommandNamedEl = document.createElement('p')
 
@@ -25,7 +24,6 @@ function buildFeaturedItems(featuredItems) {
         itemTitleEl.classList.add('main_items_item_info_title')
         itemPriceEl.classList.add('main_items_item_info_price')
         cartBoxEl.classList.add('main_items_item_add')
-        // cartLinkEl.classList.add('main_items_item_add_link')
         cartEl.classList.add('main_items_item_add_link')
         cartImgEl.classList.add('main_items_item_add_link_img')
         cartCommandNamedEl.classList.add('main_items_item_add_link_txt')
@@ -35,41 +33,43 @@ function buildFeaturedItems(featuredItems) {
         itemImgEl.alt = item.name
         itemTitleEl.textContent = item.name
         itemPriceEl.textContent = item.price + ' ' + item.currency
-        // cartLinkEl.href = '#'
         cartImgEl.src = 'img/cart-add.svg'
         cartImgEl.alt = 'cart'
         cartCommandNamedEl.textContent = 'Add to Cart'
 
         itemInfoBoxEL.appendChild(itemTitleEl)
         itemInfoBoxEL.appendChild(itemPriceEl)
-        // cartLinkEl.appendChild(cartImgEl)
-        // cartLinkEl.appendChild(cartCommandNamedEl)
         cartEl.appendChild(cartImgEl)
         cartEl.appendChild(cartCommandNamedEl)
         productLinkEl.appendChild(itemImgEl)
         productLinkEl.appendChild(itemInfoBoxEL)
-        // cartBoxEl.appendChild(cartLinkEl)
         cartBoxEl.appendChild(cartEl)
         itemEl.appendChild(productLinkEl)
         itemEl.appendChild(cartBoxEl)
         itemsListEl.appendChild(itemEl)
 
         cartBoxEl.addEventListener('click', event => {
-            cartItems.push(item)
-            document.querySelector('.cart-content__cart').innerHTML = ''
+            cartItems.set(item, cartItems.has(item) ? cartItems.get(item) + 1 : 1)
+            document.querySelector('.cart-box').innerHTML = ''
             buildCartItems(cartItems)
         })
     })
 }
 
 function buildCartItems(cartItems) {
-    const cartItemsBoxEl = document.querySelector('.cart-content__cart')
+    const cartItemsBoxEl = document.querySelector('.cart-box')
+    const cartItemsTitleEl = document.createElement('h1')
     const cartItemsListEl = document.createElement('ul')
 
+    cartItemsTitleEl.classList.add('cart-box__title')
     cartItemsListEl.classList.add('cart-content__list')
+
+    cartItemsTitleEl.textContent = 'Cart Items'
+
+    cartItemsBoxEl.appendChild(cartItemsTitleEl)
     cartItemsBoxEl.appendChild(cartItemsListEl)
 
-    cartItems.forEach(item => {
+    cartItems.forEach((amount, item) => {
         const itemEl = document.createElement('li')
         const productLinkEl= document.createElement('a')
         const itemImgEl = document.createElement('img')
@@ -121,7 +121,7 @@ function buildCartItems(cartItems) {
         itemValueSizeEl.textContent = ' ' + item.size
         itemValueQuantityEl.type = 'number'
         itemValueQuantityEl.min = '1'
-        itemValueQuantityEl.value = '1'
+        itemValueQuantityEl.value = amount
         itemDeleteSvgEl.setAttribute('fill', 'none');
         itemDeleteSvgEl.setAttribute('viewBox', '0 0 18 18');
         itemDeleteSvgEl.setAttribute('width', '18');
@@ -152,13 +152,11 @@ function buildCartItems(cartItems) {
         cartItemsListEl.appendChild(itemEl)
 
         itemDeleteEl.addEventListener('click', event => {
-            cartItems.pop()
-            if (cartItems.length === 0) document.querySelector('.cart-content__cart').innerHTML = ''
+            cartItems.delete(item)
+            if (cartItems.size === 0) document.querySelector('.cart-box').innerHTML = ''
             itemEl.remove()
         })
     })
-
 }
 
 buildFeaturedItems(JSON.parse(data))
-
