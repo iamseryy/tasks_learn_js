@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84223bfe-f4ee-455d-b3a1-231da1fea416" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/items.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/items.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/json_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/json_data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task13/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../task13/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +31,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Learning/gb/031_html_css_adv/seminars/tasks/tasks_learn_html_css_adv/task5/LUXERIOUS_FASHION",
+    "last_opened_file_path": "I:/learning/gb/032_основы_js/seminars/tasks/tasks_learn_js/task13",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,6 +52,7 @@
       <workItem from="1708426479989" duration="28000" />
       <workItem from="1708883038314" duration="6514000" />
       <workItem from="1708967841116" duration="4938000" />
+      <workItem from="1709570590384" duration="113000" />
     </task>
     <servers />
   </component>

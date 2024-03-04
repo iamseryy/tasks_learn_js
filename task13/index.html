@@ -5,11 +5,29 @@
     <title>Title</title>
 </head>
 <body>
+    <main>
+        <div class="info-box1">
+            <h2 class="info-box1__title" ></h2>
+            <p class="info-box1__desc">
+                <span class="info-box1__span"></span>
+            </p>
+        </div>
+        <div class="info-box2">
+            <h2 class="info-box2__title" ></h2>
+            <p class="info-box2__desc">
+                <span class="searching-class"></span>
+        </div>
+        <div class="info-box2">
+            <h2 class="info-box3__title" ></h2>
+            <p class="info-box3__desc">
+                <span class="info-box3__span"></span>
+        </div>
+    </main>
     <script>
         //1) Дан массив const arr = [1, 5, 7, 9] с помощью Math.min и spread оператора,
         // найти минимальное число в массиве, решение задание должно состоять из одной строки
-        // const arr = [1, 5, 7, 9]
-        // console.log(Math.min(...arr))
+        const arr = [1, 5, 7, 9]
+        console.log(Math.min(...arr))
 
         //2) Напишите функцию createCounter, которая создает счетчик и возвращает объект с двумя методами:
         // increment и decrement. Метод increment должен увеличивать значение счетчика на 1,
@@ -17,18 +35,15 @@
         // Значение счетчика должно быть доступно только через методы объекта, а не напрямую.
         const createCounter = () => {
             let counter = 0;
-            return () => {
-                return ++counter
-            }, () => {
-                return --counter
+            return {
+                increment: () => ++counter,
+                decrement: () => --counter
             }
         }
 
-        const {increment,  decrement } = createCounter()
-        console.log(increment())
-        console.log(increment())
-        console.log(decrement())
-        console.log(decrement())
+        const counter = createCounter()
+        console.log(counter.increment())
+        console.log(counter.decrement())
 
         // 3) Напишите рекурсивную функцию findElementByClass, которая принимает корневой элемент дерева DOM
         // и название класса в качестве аргументов и возвращает первый найденный элемент с указанным классом в этом дереве.
@@ -37,7 +52,16 @@
         // const targetElement = findElementByClass(rootElement, 'my-class');
         // console.log(targetElement);
 
+        const findElementByClass = (rootElement, classToFind) => {
+            if (rootElement.classList.contains(classToFind)) return rootElement
+            for(const element of rootElement.children){
+                const foundElement = findElementByClass(element, classToFind)
+                if(foundElement) return foundElement
+            }
+            return null
+        }
 
+        console.log(findElementByClass(document.querySelector('main'), 'searching-class'))
     </script>
 </body>
 </html>
