@@ -15,3 +15,4 @@
 | 12 | **[Task12](https://github.com/iamseryy/tasks_learn_js/tree/main/task12)** | Работа с медиа  |
 | 13 | **[Task13](https://github.com/iamseryy/tasks_learn_js/tree/main/task13)** | Функциональный Javascript  |
 | 14 | **[Task14](https://github.com/iamseryy/tasks_learn_js/tree/main/task14)** | Основы ООП  |
+| 15 | **[Task15](https://github.com/iamseryy/tasks_learn_js/tree/main/task15)** | ООП  |
