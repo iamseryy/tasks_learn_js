@@ -29,9 +29,7 @@
                 this.name = name
             }
 
-            displayInfo() {
-                console.log(`Name: ${this.name}`)
-            }
+            displayInfo = () => console.log(`Name: ${this.name}`)
         }
 
         class Manager extends Employee {
@@ -40,10 +38,7 @@
                 this.department = department
             }
 
-            displayInfo() {
-                super.displayInfo()
-                console.log(`Department: ${this.department}`)
-            }
+            displayInfo = () => console.log(`Name: ${this.name}\nDepartment: ${this.department}`)
         }
 
         const employee = new Employee('John Smith')
@@ -72,8 +67,29 @@
         order.addProduct(product2);
         console.log(order.getTotalPrice()); // Вывод: 600
          */
+        class Product {
+            constructor(name, price) {
+                this.name = name;
+                this.price = price;
+            }
+        }
 
+        class Order {
+            products = []
+            constructor(orderNumber) {
+                this.orderNumber = orderNumber
+            }
 
+            addProduct = (product) => this.products.push(product)
+            getTotalPrice = () => this.products.map(product => product.price).reduce((acc, it) => acc + it, 0)
+        }
+
+        const order = new Order(12345);
+        const product1 = new Product('Phone', 500);
+        order.addProduct(product1);
+        const product2 = new Product('Headphones', 100);
+        order.addProduct(product2);
+        console.log(order.getTotalPrice()); // Вывод: 600
     </script>
 </body>
 </html>
