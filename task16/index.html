@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+    <h1 style="color:green" id="myElement">TEST</h1>
     <script>
         /*
         Получение данных о пользователе
@@ -17,19 +18,20 @@
         Если запрос успешен (с кодом 200), функция извлекает данные из ответа с помощью response.json()
         и возвращает объект с данными о пользователе. Если запрос неуспешен, функция отклоняет промис с сообщением об ошибке.
         */
-        function getUserData(id) {
-            fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+        const getUserData = (id) => {
+            return fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
                 .then(response => {
                     if (response.ok) {
                         return response.json()
                     } else {
-                        throw new Error('User not found')
+                        throw new Error('HTTP error: ' + response.status)
                     }
                 })
+                .catch(error => console.error(error.message))
         }
 
-        console.log(getUserData(2))
-
+        getUserData(2)
+            .then(user => console.log(user))
 
         /*
         Отправка данных на сервер
@@ -42,15 +44,15 @@
             name: 'John Smith',
             age: 30,
             email: 'john@example.com'
-        };
+        }
 
         saveUserData(user)
             .then(() => {
-                console.log('User data saved successfully');
+                console.log('User data saved successfully')
             })
             .catch(error => {
                 console.log(error.message);
-            });
+            })
 
         saveUserData использует fetch для отправки данных о пользователе на удаленный сервер для сохранения.
         Она отправляет POST-запрос на URL-адрес /users с указанием типа содержимого application/json и сериализует
@@ -58,6 +60,35 @@
         функция разрешает промис. Если запрос неуспешен, функция отклоняет промис с сообщени
         */
 
+        const saveUserData = (user) => {
+            return fetch('https://jsonplaceholder.typicode.com/posts', {
+                method: 'POST',
+                body: JSON.stringify(user),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('HTTP error: ' + response.status)
+                    }
+                })
+
+        }
+
+        const user = {
+            name: 'John Smith',
+            age: 30,
+            email: 'john@example.com'
+        }
+
+        saveUserData(user)
+            .then(() => {
+                console.log('User data saved successfully')
+            })
+            .catch(error => {
+                console.log(error.message)
+            })
 
         /*
         Изменение стиля элемента через заданное время
@@ -67,6 +98,15 @@
         // Пример использования функции
         changeStyleDelayed('myElement', 2000); // Через 2 секунды изменяет стиль элемента с id 'myElement'"
          */
+
+        const changeStyleDelayed = (elementId, delay) => {
+            setTimeout(() => {
+                document.getElementById(elementId).style.color = "red"
+            }, delay)
+        }
+
+        changeStyleDelayed('myElement', 2000)
+
 </script>
 </body>
 </html>
