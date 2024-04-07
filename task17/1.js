@@ -15,3 +15,36 @@
 вывода их в консоль в формате:
 "Название альбома - Исполнитель (Год выпуска)"
 */
+
+const albums = [
+    { title: "title1", artist: "artist1", year: 2015 },
+    { title: "title2", artist: "artist2", year: 2016 },
+    { title: "title3", artist: "artist3", year: 2017 },
+]
+
+const collections = {
+    albums,
+    [Symbol.iterator]() {
+        let index = 0
+        return {
+            next:() => {
+                if (index < this.albums.length) {
+                    return {
+                        value: this.albums[index++],
+                        done: false,
+                    }
+                }
+                return {
+                    value: undefined,
+                    done: true,
+                }
+            },
+        }
+    },
+}
+
+const iterator = collections[Symbol.iterator]()
+
+for (const album of collections) {
+    console.log(`${album.title} - ${album.artist}  (${album.year})`)
+}
