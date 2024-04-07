@@ -24,24 +24,13 @@ const albums = [
 
 const collections = {
     albums,
-    [Symbol.iterator]() {
-        let index = 0
-        return {
-            next:() => {
-                if (index < this.albums.length) {
-                    return {
-                        value: this.albums[index++],
-                        done: false,
-                    }
-                }
-                return {
-                    value: undefined,
-                    done: true,
-                }
-            },
+    *[Symbol.iterator]() {
+        for (const album of this.albums) {
+            yield album
         }
     },
 }
+
 
 const iterator = collections[Symbol.iterator]()
 
