@@ -25,6 +25,27 @@
 Десерт Чизкейк
 */
 
+const chefsDishes = new Map()
+chefsDishes
+    .set('Пицца', 'Олег')
+    .set('Суши', 'Андрей')
+    .set('Десерт', 'Анна')
+
+const dishes = new Map()
+dishes
+    .set('Маргарита', 'Пицца')
+    .set('Пепперони', 'Пицца')
+    .set('Три сыра', 'Пицца')
+    .set('Филадельфия', 'Суши')
+    .set('Калифорния', 'Суши')
+    .set('Чизмаки', 'Суши')
+    .set('Сеякемаки', 'Суши')
+    .set('Тирамису', 'Десерт')
+    .set('Чизкейк', 'Десерт')
+
+const orders = new Map()
+
+
 // Посетитель ресторана.
 class Client {
   constructor(firstname, lastname) {
@@ -33,9 +54,29 @@ class Client {
   }
 }
 
+
 // Вам необходимо реализовать класс, который управляет заказами и поварами.
 class Manager {
+    newOrder(client, ...newOrderPositions) {
+      newOrderPositions.forEach(newPosition => {
+        let clientOrderPositions = orders.get(client)
+        if(!clientOrderPositions) clientOrderPositions = new Map()
 
+        if(!dishes.has(newPosition.name)) {
+          throw new Error(`${newPosition.type} "${newPosition.name}" - такого блюда не существует.`)
+        }
+
+        let quantity = 0
+        if (clientOrderPositions)  quantity = clientOrderPositions.get(newPosition.name)
+        clientOrderPositions.set(newPosition.name, quantity ? quantity + newPosition.quantity : newPosition.quantity)
+        orders.set(client, clientOrderPositions)
+      })
+
+      console.log(`Клиент ${client.firstname} заказал:\n`)
+      orders.get(client).forEach((value, key) => {
+        console.log(`${dishes.get(key)} "${key}" - ${value}; готовит повар ${chefsDishes.get(dishes.get(key))}`)
+      })
+    }
 }
 
 // Можно передать внутрь конструктора что-либо, если необходимо.
@@ -48,6 +89,9 @@ manager.newOrder(
   { name: "Пепперони", quantity: 2, type: "Пицца" },
   { name: "Чизкейк", quantity: 1, type: "Десерт" },
 );
+
+
+
 // Вывод:
 // Клиент Иван заказал: 
 // Пицца "Маргарита" - 1; готовит повар Олег
@@ -77,6 +121,7 @@ manager.newOrder(
 // Суши "Филадельфия" - 5; готовит повар Андрей
 // Суши "Калифорния" - 4; готовит повар Андрей
 // Десерт "Тирамису" - 2; готовит повар Анна
+
 
 manager.newOrder(
   clientPavel, 

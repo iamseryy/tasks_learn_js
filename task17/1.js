@@ -32,8 +32,6 @@ const collections = {
 }
 
 
-const iterator = collections[Symbol.iterator]()
-
 for (const album of collections) {
     console.log(`${album.title} - ${album.artist}  (${album.year})`)
 }
