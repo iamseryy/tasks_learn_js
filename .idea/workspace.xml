@@ -5,12 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="570f4b6d-42ee-4749-9e69-5a482a28d6c5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/task17/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/task17/1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task18/css/_fonts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task18/css/_positions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task18/css/_vars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task18/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,13 +46,16 @@
   "keyToString": {
     "JavaScript Debug.index.html.executor": "Run",
     "Node.js.1.js.executor": "Run",
+    "Node.js.2.js.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/gb/tasks_learn_js",
+    "last_opened_file_path": "D:/gb/030_adv_html",
+    "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -49,8 +67,19 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\gb\tasks_learn_js\task18\css" />
       <recent name="I:\gb\032_основы_js\seminars\tasks\tasks_learn_js" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/task18/2.js" working-dir="$PROJECT_DIR$/task18">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.2.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,6 +102,7 @@
       <workItem from="1707133117519" duration="388000" />
       <workItem from="1707152772859" duration="3131000" />
       <workItem from="1712480461223" duration="8431000" />
+      <workItem from="1713031315603" duration="21368000" />
     </task>
     <servers />
   </component>
@@ -85,7 +115,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/task17/1.js</url>
           <line>21</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

@@ -1,0 +1,26 @@
+@mixin fontButton($fs, $fw, $cl, $bc) {
+  font-family: Lato, serif;
+  font-size: $fs;
+  line-height: 32px;
+  font-weight: $fw;
+  letter-spacing: 0.025em;
+  color: $cl;
+  background-color: $bc;
+}
+
+@mixin fontIcon($fs, $fw, $cl) {
+  font-size: $fs;
+  line-height: 32px;
+  font-weight: $fw;
+  letter-spacing: 0.025em;
+  color: $cl;
+}
+
+@mixin fontTitle($fs, $lh, $fw, $cl) {
+  font-family: Lato, serif;
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+  letter-spacing: 0.025em;
+  color: $cl;
+}
