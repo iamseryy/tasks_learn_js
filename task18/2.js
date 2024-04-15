@@ -90,14 +90,22 @@ function renderGoods() {
 
     productTitleEl.textContent = product.product
     reviewsTitleEl.textContent = 'Reviews'
-    formLabelEl.textContent = 'Your review (50 to 500 characters)'
+    formLabelEl.textContent = 'Your review (10 to 500 characters)'
     inputEl.placeholder = 'Enter your review'
     buttonEl.textContent = 'SEND'
-    errorEl.textContent = reviewsError
+
+
+    if(findInvalidReviewsByProduct(product).length !== 0) {
+      errorEl.textContent = 'Your review must be between 10 and 500 characters.'
+      goods[goods.indexOf(product)].reviews.pop()
+    } else {
+      errorEl.textContent = ''
+    }
 
     product.reviews.forEach(review => {
       const reviewItemEl = document.createElement('li')
       const reviewDescEl = document.createElement('p')
+
       reviewDescEl.textContent = '- ' + review.text
       reviewItemEl.appendChild(reviewDescEl)
       reviewListEl.appendChild(reviewItemEl)
@@ -110,7 +118,6 @@ function renderGoods() {
     formEl.appendChild(formLabelEl)
     formEl.appendChild(formInputBoxEl)
 
-
     productEl.appendChild(productTitleEl)
     productEl.appendChild(reviewsTitleEl)
     productEl.appendChild(reviewListEl)
@@ -119,29 +126,23 @@ function renderGoods() {
     reviewsEl.appendChild(productEl)
 
     buttonEl.addEventListener('click', () => {
-
-      if(inputEl.value.length < 3 || inputEl.value.length > 500) {
-        reviewsError = 'Your review must be between 50 and 500 characters.'
-      } else {
-        reviewsError = ''
-        const productReviews = product.reviews
-        productReviews.push({id: uid(), text: inputEl.value})
-        goods[product] = {id: product.id, product: product.product, reviews: productReviews}
-      }
-
+      const productReviews = product.reviews
+      productReviews.push({id: uid(), text: inputEl.value})
+      goods[product] = {id: product.id, product: product.product, reviews: productReviews}
       event.preventDefault()
       document.querySelector('.goods').innerHTML = ''
       renderGoods()
-
     })
-
-    reviewsError = ''
   })
 }
 
+function findInvalidReviewsByProduct(product) {
+  return goods[goods.indexOf(product)].reviews.filter(review => review.text.length < 10 || review.text.length > 500)
+}
+
+
 
 const goods = [...initialData]
-let reviewsError = ''
 const reviewsEl = document.querySelector('.goods')
 renderGoods()
 
