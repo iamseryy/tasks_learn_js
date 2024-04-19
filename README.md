@@ -19,3 +19,4 @@
 | 16 | **[Task16](https://github.com/iamseryy/tasks_learn_js/tree/main/task16)** | Асинхронность |
 | 17 | **[Task17](https://github.com/iamseryy/tasks_learn_js/tree/main/task17)** | Коллекции и итераторы. Модули |
 | 18 | **[Task18](https://github.com/iamseryy/tasks_learn_js/tree/main/task18)** | Продвинутая работа с функциями и классами |
+| 19 | **[Task19](https://github.com/iamseryy/tasks_learn_js/tree/main/task19)** | Промисы. Хранилище|
