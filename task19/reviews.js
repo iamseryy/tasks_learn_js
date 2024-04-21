@@ -23,7 +23,7 @@ function renderProducts() {
 }
 
 function showButtonEventListener(showButtonEl, product, productEl, reviewsEl) {
-    showButtonEl.addEventListener('click', e => {
+    showButtonEl.addEventListener('click', event => {
         products = findAllProducts()
 
         renderReviews(product, productEl, products.get(product), reviewsEl)
