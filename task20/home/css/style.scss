@@ -56,11 +56,9 @@ ul {
   @extend %column_center
 }
 
-
-
 table {
   width: 800px;
-  border-top: 7px solid rgb(43, 129, 17);
+  border-top: 1px solid rgb(43, 129, 17);
   border-collapse: collapse;
   text-align: center;
   margin-bottom: 20px;
@@ -68,71 +66,31 @@ table {
 }
 
 td {
-  text-align: left;
+  text-align: center;
   padding: 10px;
-  border: 3px solid rgb(43, 129, 17);
+  border: 1px solid rgb(43, 129, 17);
 }
 th {
   text-align: center;
   padding: 10px;
-  border: 3px solid rgb(43, 129, 17);
+  border: 1px solid rgb(43, 129, 17);
 }
 
-
-
-
-.add {
-  margin-top: 20px;
-  &__form {
-    @extend %column_end;
-  }
-  &__title {
-    margin-bottom: 20px;
-  }
-  &__button {
-    padding: 0.3rem 1rem;
-  }
+caption {
+  font-size: 25px;
 }
 
-.product {
-  @extend %column_end;
-  margin-bottom: 20px;
-  &__error {
-    font-size: 12px;
-    color: #f16d7f;
-  }
-}
-.products-reviews__title {
-  margin-bottom: 30px;
+.add-btn {
+  margin-left: 20px;
+  padding: 0.05rem 1rem;
+  margin-bottom: 10px;
 }
 
-.product-item {
-  margin-bottom: 30px;
-}
-
-.show-button {
+.cancel-btn {
   margin-left: 20px;
   padding: 0.05rem 1rem;
 }
 
-.delete-button {
-  margin-left: 20px;
-  padding: 0.05rem 1rem;
-}
-
-.review-item {
-  padding-top: 10px;
-}
-
-
-.review {
-  @extend %column_end;
-  margin-bottom: 20px;
-  &__error {
-    font-size: 12px;
-    color: #f16d7f;
-  }
-}
 
 
 

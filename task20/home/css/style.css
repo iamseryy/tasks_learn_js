@@ -4,12 +4,6 @@
   align-items: center;
 }
 
-.review, .product, .add__form {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -51,7 +45,7 @@ ul {
 
 table {
   width: 800px;
-  border-top: 7px solid rgb(43, 129, 17);
+  border-top: 1px solid rgb(43, 129, 17);
   border-collapse: collapse;
   text-align: center;
   margin-bottom: 20px;
@@ -59,63 +53,30 @@ table {
 }
 
 td {
-  text-align: left;
+  text-align: center;
   padding: 10px;
-  border: 3px solid rgb(43, 129, 17);
+  border: 1px solid rgb(43, 129, 17);
 }
 
 th {
   text-align: center;
   padding: 10px;
-  border: 3px solid rgb(43, 129, 17);
+  border: 1px solid rgb(43, 129, 17);
 }
 
-.add {
-  margin-top: 20px;
-}
-.add__title {
-  margin-bottom: 20px;
-}
-.add__button {
-  padding: 0.3rem 1rem;
+caption {
+  font-size: 25px;
 }
 
-.product {
-  margin-bottom: 20px;
-}
-.product__error {
-  font-size: 12px;
-  color: #f16d7f;
-}
-
-.products-reviews__title {
-  margin-bottom: 30px;
-}
-
-.product-item {
-  margin-bottom: 30px;
-}
-
-.show-button {
+.add-btn {
   margin-left: 20px;
   padding: 0.05rem 1rem;
+  margin-bottom: 10px;
 }
 
-.delete-button {
+.cancel-btn {
   margin-left: 20px;
   padding: 0.05rem 1rem;
-}
-
-.review-item {
-  padding-top: 10px;
-}
-
-.review {
-  margin-bottom: 20px;
-}
-.review__error {
-  font-size: 12px;
-  color: #f16d7f;
 }
 
 /*# sourceMappingURL=style.css.map */

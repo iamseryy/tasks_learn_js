@@ -13,11 +13,12 @@
 | 10 | **[Task10](https://github.com/iamseryy/tasks_learn_js/tree/main/task10)** | Работа с JSON  |
 | 11 | **[Task11](https://github.com/iamseryy/tasks_learn_js/tree/main/task11)** | Шаблонизация  |
 | 12 | **[Task12](https://github.com/iamseryy/tasks_learn_js/tree/main/task12)** | Работа с медиа  |
-| 13 | **[Task13](https://github.com/iamseryy/tasks_learn_js/tree/main/task13)** | Функциональный Javascript  |
-| 14 | **[Task14](https://github.com/iamseryy/tasks_learn_js/tree/main/task14)** | Основы ООП  |
-| 15 | **[Task15](https://github.com/iamseryy/tasks_learn_js/tree/main/task15)** | ООП  |
-| 16 | **[Task16](https://github.com/iamseryy/tasks_learn_js/tree/main/task16)** | Асинхронность |
-| 17 | **[Task17](https://github.com/iamseryy/tasks_learn_js/tree/main/task17)** | Коллекции и итераторы. Модули |
-| 18 | **[Task18](https://github.com/iamseryy/tasks_learn_js/tree/main/task18)** | Продвинутая работа с функциями и классами |
-| 19 | **[Task19](https://github.com/iamseryy/tasks_learn_js/tree/main/task19)** | Промисы. Хранилище|
-| 20 | **[Task20](https://github.com/iamseryy/tasks_learn_js/tree/main/task20)** | Dom-дерево|
+| 13 | **[Task13](https://github.com/iamseryy/tasks_learn_js/tree/main/task13)** | Функциональный Javascript|
+| 14 | **[Task14](https://github.com/iamseryy/tasks_learn_js/tree/main/task14)** |Основы ООП|
+| 15 | **[Task15](https://github.com/iamseryy/tasks_learn_js/tree/main/task15)** |ООП|
+| 16 | **[Task16](https://github.com/iamseryy/tasks_learn_js/tree/main/task16)** |Асинхронность|
+| 17 | **[Task17](https://github.com/iamseryy/tasks_learn_js/tree/main/task17)** |Коллекции и итераторы. Модули|
+| 18 | **[Task18](https://github.com/iamseryy/tasks_learn_js/tree/main/task18)** |Продвинутая работа с функциями и классами|
+| 19 | **[Task19](https://github.com/iamseryy/tasks_learn_js/tree/main/task19)** |Промисы. Хранилище|
+| 20 | **[Task20](https://github.com/iamseryy/tasks_learn_js/tree/main/task20/home)** |Dom-дерево|
+| 21 | **[Task21](https://github.com/iamseryy/tasks_learn_js/tree/main/task21/home)** |События, формы|
