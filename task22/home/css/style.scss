@@ -1,0 +1,65 @@
+@import "vars";
+@import "positions";
+
+
+
+.center {
+  @include center_content($sliderWidth);
+}
+
+%column_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+%flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /*
+  min-height: -webkit-fill-available;
+   */
+}
+
+html {
+  /*
+   min-height: -webkit-fill-available;
+   */
+  scroll-behavior: smooth;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+summary {
+  display: block;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.main {
+  @extend %column_center
+}
