@@ -22,3 +22,4 @@
 | 19 | **[Task19](https://github.com/iamseryy/tasks_learn_js/tree/main/task19)** |Промисы. Хранилище|
 | 20 | **[Task20](https://github.com/iamseryy/tasks_learn_js/tree/main/task20/home)** |Dom-дерево|
 | 21 | **[Task21](https://github.com/iamseryy/tasks_learn_js/tree/main/task21/home)** |События, формы|
+| 22 | **[Task22](https://github.com/iamseryy/tasks_learn_js/tree/main/task22/home)** |Сетевые запросы|
