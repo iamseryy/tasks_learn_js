@@ -57,16 +57,16 @@ function getSchedule() {
 }
 
 function getMaxAmountParticipantsByLessonName(lessonName) {
-    return getSchedule().filter(it => it.name === lessonName)[0].maxParticipants
+    return getSchedule().find(it => it.name === lessonName).maxParticipants
 }
 
 function getCurrentAmountParticipantsByLessonName(lessonName) {
-    return getSchedule().filter(it => it.name === lessonName)[0].currentParticipants
+    return getSchedule().find(it => it.name === lessonName).currentParticipants
 }
 
 function incrementCurrentAmountParticipantsByLessonName(lessonName) {
     const schedule = getSchedule()
-    schedule[schedule.indexOf(schedule.filter(it => it.name === lessonName)[0])].currentParticipants++
+    schedule[schedule.indexOf(schedule.find(it => it.name === lessonName))].currentParticipants++
     localStorage.setItem(
         LOCAL_STORAGE_KEY,
         JSON.stringify(schedule)
@@ -75,7 +75,7 @@ function incrementCurrentAmountParticipantsByLessonName(lessonName) {
 
 function decrementCurrentAmountParticipantsByLessonName(lessonName) {
     const schedule = getSchedule()
-    schedule[schedule.indexOf(schedule.filter(it => it.name === lessonName)[0])].currentParticipants--
+    schedule[schedule.indexOf(schedule.find(it => it.name === lessonName))].currentParticipants--
     localStorage.setItem(
         LOCAL_STORAGE_KEY,
         JSON.stringify(schedule)
@@ -83,12 +83,12 @@ function decrementCurrentAmountParticipantsByLessonName(lessonName) {
 }
 
 function isCurrentParticipantRegistered(lessonName) {
-    return getSchedule().filter(it => it.name === lessonName)[0].registered
+    return getSchedule().find(it => it.name === lessonName).registered
 }
 
 function registerParticipant(lessonName) {
     const schedule = getSchedule()
-    schedule[schedule.indexOf(schedule.filter(it => it.name === lessonName)[0])].registered = true
+    schedule[schedule.indexOf(schedule.find(it => it.name === lessonName))].registered = true
     localStorage.setItem(
         LOCAL_STORAGE_KEY,
         JSON.stringify(schedule)
@@ -97,7 +97,7 @@ function registerParticipant(lessonName) {
 
 function unregisterParticipant(lessonName) {
     const schedule = getSchedule()
-    schedule[schedule.indexOf(schedule.filter(it => it.name === lessonName)[0])].registered = false
+    schedule[schedule.indexOf(schedule.find(it => it.name === lessonName))].registered = false
     localStorage.setItem(
         LOCAL_STORAGE_KEY,
         JSON.stringify(schedule)
