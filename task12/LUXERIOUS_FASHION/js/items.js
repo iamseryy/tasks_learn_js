@@ -50,7 +50,8 @@ function buildFeaturedItems(featuredItems) {
 
         cartBoxEl.addEventListener('click', event => {
             cartItems.set(item, cartItems.has(item) ? cartItems.get(item) + 1 : 1)
-            document.querySelector('.cart-box').innerHTML = ''
+            const cartItemsBoxEl = document.querySelector('.cart-box')
+            if (cartItemsBoxEl) cartItemsBoxEl.innerHTML = ''
             buildCartItems(cartItems)
         })
     })

@@ -34,7 +34,7 @@ const schedule = getSchedule()
 const scheduleBodyEl = document.querySelector('.schedule-body');
 
 schedule.forEach(it => {
-    scheduleBodyEl.insertAdjacentHTML('beforeend', getScheduleItemHtml(it))
+
 })
 
 scheduleBodyEl.addEventListener('click', ({ target }) => {
